@@ -163,14 +163,14 @@ const Hero = () => {
     >
 
       {/* Top alternate cards */}
-      <div className="relative w-full max-w-6xl h-[132px] sm:h-[165px] md:h-[190px] px-[25px] sm:px-[50px] md:px-[75px] z-10 mb-5 md:mb-14">
-        <div ref={(el) => { metricCardRefs.current[0] = el; }} className="absolute left-[4.4%] sm:left-[8.8%] md:left-[13.2%] xl:left-[20%] top-0 translate-x-0 xl:-translate-x-1/2 w-[clamp(120px,27vw,370px)] bg-[#2ECC71] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-[#111] transition-transform hover:-translate-y-1">
+      <div className="relative w-full h-[132px] sm:h-[165px] md:h-[190px] z-10 mb-5 md:mb-14">
+        <div ref={(el) => { metricCardRefs.current[0] = el; }} className="absolute left-[27.2%] top-0 w-[clamp(120px,27vw,370px)] bg-[#2ECC71] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-[#111] transition-transform hover:-translate-y-1">
           <span className="text-3xl sm:text-4xl md:text-[58px] md:leading-none font-bold">99%</span>
           <span className="text-[10px] sm:text-xs md:text-sm mt-3 font-semibold uppercase">Performance</span>
           <p className="text-[10px] sm:text-xs mt-2 text-center opacity-75">Optimum speed & setup</p>
         </div>
 
-        <div ref={(el) => { metricCardRefs.current[2] = el; }} className="absolute right-0 sm:right-0 md:right-0 xl:left-[60%] xl:right-auto top-0 translate-x-0 xl:-translate-x-1/2 w-[clamp(120px,27vw,370px)] bg-[#333] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-white transition-transform hover:-translate-y-1">
+        <div ref={(el) => { metricCardRefs.current[2] = el; }} className="absolute left-[57.4%] top-0 w-[clamp(120px,27vw,370px)] bg-[#333] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-white transition-transform hover:-translate-y-1">
           <span className="text-3xl sm:text-4xl md:text-[58px] md:leading-none font-bold">10x</span>
           <span className="text-[10px] sm:text-xs md:text-sm mt-3 font-semibold uppercase text-gray-300">Efficiency</span>
           <p className="text-[10px] sm:text-xs mt-2 text-center text-gray-400">Scale without limits</p>
@@ -229,14 +229,18 @@ const Hero = () => {
       </div>
 
       {/* Remaining cards stay below */}
-      <div className="relative w-full max-w-6xl h-[132px] sm:h-[165px] md:h-[190px] px-2 sm:px-6 z-10 mt-8 md:mt-12">
-        <div ref={(el) => { metricCardRefs.current[1] = el; }} className="absolute left-[4.4%] sm:left-[8.8%] md:left-[13.2%] xl:left-[40%] top-0 translate-x-0 xl:-translate-x-1/2 w-[clamp(120px,27vw,370px)] bg-[#6ac9ff] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-[#111] transition-transform hover:-translate-y-1">
+      <div className="relative w-full h-[132px] sm:h-[165px] md:h-[190px] z-10 mt-8 md:mt-12">
+        <div ref={(el) => { metricCardRefs.current[1] = el; }} className="absolute left-[42.2%] top-0 w-[clamp(120px,27vw,370px)] bg-[#6ac9ff] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-[#111] transition-transform hover:-translate-y-1">
           <span className="text-3xl sm:text-4xl md:text-[58px] md:leading-none font-bold">24/7</span>
           <span className="text-[10px] sm:text-xs md:text-sm mt-3 font-semibold uppercase">Reliability</span>
           <p className="text-[10px] sm:text-xs mt-2 text-center opacity-75">Always strictly stable</p>
         </div>
 
-        <div ref={(el) => { metricCardRefs.current[3] = el; }} className="absolute right-0 sm:right-0 md:right-0 xl:left-[80%] xl:right-auto top-0 translate-x-0 xl:-translate-x-1/2 w-[clamp(120px,27vw,370px)] bg-[#fa7328] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-[#111] transition-transform hover:-translate-y-1">
+        <div
+          ref={(el) => { metricCardRefs.current[3] = el; }}
+          className="absolute top-0 w-[clamp(120px,27vw,370px)] bg-[#fa7328] rounded-2xl p-4 sm:p-6 md:p-8 flex flex-col items-center shadow-lg text-[#111] transition-transform hover:-translate-y-1"
+          style={{ left: 'min(72.4%, calc(100% - clamp(120px, 27vw, 370px) - 16px))' }}
+        >
           <span className="text-3xl sm:text-4xl md:text-[58px] md:leading-none font-bold">+300</span>
           <span className="text-[10px] sm:text-xs md:text-sm mt-3 font-semibold uppercase">Integrations</span>
           <p className="text-[10px] sm:text-xs mt-2 text-center opacity-75">Seamless network</p>

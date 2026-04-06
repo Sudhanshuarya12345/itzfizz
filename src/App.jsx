@@ -5,7 +5,7 @@ function App() {
     <div className="min-h-screen bg-black text-white font-sans selection:bg-blue-500/30">
       <Hero />
       
-      {/* Spacer / Following content to allow scrolling */}
+      {/* Spacer / Following content to allow scrolling
       <section className="relative w-full min-h-screen bg-neutral-950 flex flex-col items-center justify-center border-t border-neutral-900 px-4">
         <div className="max-w-4xl text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
@@ -30,7 +30,7 @@ function App() {
              </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
